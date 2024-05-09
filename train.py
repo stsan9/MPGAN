@@ -49,7 +49,7 @@ def main():
         "jet_type": args.jets,
         "data_dir": args.datasets_path,
         "num_particles": args.num_hits,
-        "particle_features": JetNet.all_particle_features
+        "particle_features": JetNet.ALL_PARTICLE_FEATURES
         if args.mask
         else JetNet.all_particle_features[:-1],
         "jet_features": "num_particles"
